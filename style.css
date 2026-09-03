@@ -375,6 +375,13 @@ p {
   width: 178px;
   height: 178px;
 }
+.donut.d2 {
+  width: 200px;
+}
+.donut.d2 svg {
+  width: 200px;
+  height: 200px;
+}
 .donut .mid {
   position: absolute;
   inset: 0;

@@ -65,69 +65,83 @@
             <section class="card c4">
               <div class="ct">Aniqlangan manba va undirish holati</div>
 
-              <div class="donut">
+              <div class="donut d2">
                 <svg
-                  viewBox="0 0 178 178"
+                  viewBox="0 0 200 200"
                   role="img"
-                  aria-label="Umumiy aniqlangan qo‘shimcha manba 138 930,9 mln so‘m. Tashqi halqa: dastlabki aniqlangan 115 396,7 mln so‘m (83,1%), qo‘shimcha aniqlangan 23 534,1 mln so‘m (16,9%). Ichki halqa: undirilgan 47 747,6 mln so‘m (34,4%), undirilishi lozim 91 183,3 mln so‘m (65,6%)."
+                  aria-label="Umumiy aniqlangan qo‘shimcha manba 138 930,9 mln so‘m. Ichki doira: dastlabki aniqlangan 115 396,7 mln so‘m (83,1%), qo‘shimcha aniqlangan 23 534,1 mln so‘m (16,9%). Tashqi halqa: undirilgan 47 747,6 mln so‘m (34,4%), undirilishi lozim 91 183,3 mln so‘m (65,6%)."
                 >
-                  <!-- Tashqi halqa — manba tarkibi -->
-                  <circle
-                    cx="89"
-                    cy="89"
-                    r="74"
-                    fill="none"
-                    stroke="#0f3057"
-                    stroke-width="12"
-                    stroke-dasharray="386.19 78.76"
-                    transform="rotate(-90 89 89)"
-                  />
-                  <circle
-                    cx="89"
-                    cy="89"
-                    r="74"
-                    fill="none"
-                    stroke="#2a78d6"
-                    stroke-width="12"
-                    stroke-dasharray="78.76 386.19"
-                    stroke-dashoffset="-386.19"
-                    transform="rotate(-90 89 89)"
-                  />
+                  <defs>
+                    <linearGradient id="pNavy" x1="0" y1="0" x2="1" y2="1">
+                      <stop offset="0%" stop-color="#1d5083" />
+                      <stop offset="100%" stop-color="#0c2542" />
+                    </linearGradient>
+                    <linearGradient id="pBlue" x1="0" y1="1" x2="1" y2="0">
+                      <stop offset="0%" stop-color="#2a78d6" />
+                      <stop offset="100%" stop-color="#63a8f2" />
+                    </linearGradient>
+                    <linearGradient id="pGreen" x1="0" y1="1" x2="1" y2="0">
+                      <stop offset="0%" stop-color="#2a8f47" />
+                      <stop offset="100%" stop-color="#44c26e" />
+                    </linearGradient>
+                    <linearGradient id="pGray" x1="0" y1="0" x2="1" y2="1">
+                      <stop offset="0%" stop-color="#dbe3ec" />
+                      <stop offset="100%" stop-color="#c2cedd" />
+                    </linearGradient>
+                    <filter
+                      id="pieShadow"
+                      x="-25%"
+                      y="-25%"
+                      width="150%"
+                      height="150%"
+                    >
+                      <feDropShadow
+                        dx="0"
+                        dy="3"
+                        stdDeviation="4"
+                        flood-color="#0f3057"
+                        flood-opacity="0.16"
+                      />
+                    </filter>
+                  </defs>
 
-                  <!-- Ichki halqa — undirish holati -->
-                  <circle
-                    cx="89"
-                    cy="89"
-                    r="56"
-                    fill="none"
-                    stroke="#e9eef4"
-                    stroke-width="12"
-                  />
-                  <circle
-                    cx="89"
-                    cy="89"
-                    r="56"
-                    fill="none"
-                    stroke="#2e9e4f"
-                    stroke-width="12"
-                    stroke-dasharray="120.93 230.93"
-                    transform="rotate(-90 89 89)"
-                  />
+                  <g
+                    filter="url(#pieShadow)"
+                    stroke="#ffffff"
+                    stroke-width="2.6"
+                    stroke-linejoin="round"
+                  >
+                    <!-- Tashqi halqa — undirish holati -->
+                    <path
+                      fill="url(#pGray)"
+                      d="M 174.85 149.97 A 90 90 0 1 1 100.00 10.00 L 100.00 38.00 A 62 62 0 1 0 151.57 134.42 Z"
+                    />
+                    <path
+                      fill="url(#pGreen)"
+                      d="M 100.00 10.00 A 90 90 0 0 1 174.85 149.97 L 151.57 134.42 A 62 62 0 0 0 100.00 38.00 Z"
+                    />
+
+                    <!-- Ichki doira — manba tarkibi -->
+                    <path
+                      fill="url(#pNavy)"
+                      d="M 100 100 L 100.00 44.00 A 56 56 0 1 1 51.03 72.84 Z"
+                    />
+                    <path
+                      fill="url(#pBlue)"
+                      d="M 100 100 L 51.03 72.84 A 56 56 0 0 1 100.00 44.00 Z"
+                    />
+                  </g>
                 </svg>
-                <div class="mid">
-                  <div class="t">Umumiy</div>
-                  <div class="v" style="font-size: 17px">138&nbsp;930,9</div>
-                  <div class="u">mln so‘m</div>
-                </div>
               </div>
               <p class="cap">
-                Umumiy aniqlangan manbaning <b>34,4% i</b> byudjetga tushdi,
-                <b>65,6% i</b> yil yakuniga qadar undirilishi lozim
+                Umumiy aniqlangan manba — <b>138 930,9 mln so‘m</b>. Shundan
+                <b>34,4% i</b> byudjetga tushdi, <b>65,6% i</b> yil yakuniga
+                qadar undirilishi lozim
               </p>
 
               <div class="keys">
                 <div class="row">
-                  <span class="dot" style="background: #0f3057"></span>
+                  <span class="dot" style="background: #12365d"></span>
                   <span class="nm">Dastlabki aniqlangan manba</span>
                   <span class="vl">115&nbsp;396,7<span>83,1%</span></span>
                 </div>
@@ -144,7 +158,7 @@
                     margin-top: 1px;
                   "
                 >
-                  <span class="dot" style="background: #cbd5e1"></span>
+                  <span class="dot" style="background: #94a3b8"></span>
                   <span class="nm"
                     ><b>Umumiy aniqlangan qo‘shimcha manba</b></span
                   >
@@ -163,7 +177,7 @@
                   <span class="vl">47&nbsp;747,6<span>34,4%</span></span>
                 </div>
                 <div class="row">
-                  <span class="dot" style="background: #e9eef4"></span>
+                  <span class="dot" style="background: #cbd5e1"></span>
                   <span class="nm"
                     >Yil yakuniga qadar undirilishi lozim bo‘lgan summa</span
                   >
