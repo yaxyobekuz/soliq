@@ -668,6 +668,163 @@ p {
   font-variant-numeric: tabular-nums;
 }
 
+/* ---------- 11b. Risk yo‘nalishlari tahlili ---------- */
+.risk-hd {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  margin-bottom: 18px;
+}
+.risk-hd .hi {
+  flex: none;
+  width: 30px;
+  height: 30px;
+  color: var(--navy);
+}
+.risk-hd .hi svg {
+  width: 100%;
+  height: 100%;
+}
+.risk-hd .ht {
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  line-height: 1.28;
+  color: var(--navy);
+}
+
+.risk-sum {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-bottom: 17px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+  text-align: center;
+}
+.risk-sum > div + div {
+  border-left: 1px dashed #c9d4e0;
+}
+.risk-sum .si {
+  display: block;
+  width: 21px;
+  height: 21px;
+  margin: 0 auto 8px;
+  color: var(--ink-2);
+}
+.risk-sum .si svg {
+  width: 100%;
+  height: 100%;
+}
+.risk-sum b {
+  display: block;
+  font-size: 19px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--navy);
+  font-variant-numeric: tabular-nums;
+}
+.risk-sum span {
+  display: block;
+  margin-top: 5px;
+  font-size: 8.5px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--gray-2);
+  line-height: 1.35;
+}
+
+.risk {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 12px;
+}
+.risk .r {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 14px;
+  background: var(--soft);
+  border: 1px solid var(--border);
+  border-radius: 13px;
+}
+.risk .ring {
+  position: relative;
+  width: 54px;
+  height: 54px;
+  flex: none;
+}
+.risk .ring svg {
+  display: block;
+  width: 54px;
+  height: 54px;
+}
+.risk .ring .trk {
+  stroke: #cbd5e1;
+}
+.risk .ring .fil {
+  stroke: #cf5334;
+}
+.risk .ring span {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-content: center;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--navy);
+  font-variant-numeric: tabular-nums;
+}
+.risk .rd {
+  flex: 1;
+  min-width: 0;
+}
+.risk .rn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--navy);
+  line-height: 1.2;
+}
+.risk .rn .ni {
+  flex: none;
+  width: 20px;
+  height: 20px;
+  color: var(--ink);
+}
+.risk .rn .ni svg {
+  width: 100%;
+  height: 100%;
+}
+.risk .rv {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+  font-size: 10.5px;
+  color: var(--gray-2);
+}
+.risk .rv + .rv {
+  margin-top: 4px;
+}
+.risk .rv b {
+  color: var(--navy);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+.risk .rv em {
+  font-style: normal;
+  color: var(--gray-2);
+  font-weight: 500;
+}
+
 /* ---------- 12. Katta to'q karta ---------- */
 .hero {
   background: linear-gradient(150deg, #14406f 0%, #0f3057 55%, #0b2340 100%);
