@@ -980,7 +980,7 @@ p {
 table {
   border-collapse: collapse;
   width: 100%;
-  min-width: 980px;
+  min-width: 1120px;
   font-size: 12.5px;
 }
 thead th {
